@@ -178,6 +178,7 @@ processors:
       field: gcp.audit.labels
       copy_from: json.labels
       if: ctx.json?.labels != null
+
 ##
 # RequestMetadata
 # .protoPayload.requestMetadata
@@ -196,6 +197,17 @@ processors:
   - user_agent:
       field: user_agent.original
       ignore_missing: true
+
+##
+# Metadata
+# .protoPayload.metadata
+# https://cloud.google.com/logging/docs/reference/audit/auditlog/rest/Shared.Types/AuditLog
+##
+  - set:
+      field: gcp.audit.metadata
+      copy_from: json.protoPayload.metadata
+      if: ctx.json?.protoPayload?.metadata != null
+
 ##
 # LogEntryOperation
 # .operation
@@ -301,6 +313,10 @@ processors:
       copy_from: json.protoPayload.status.message
       ignore_failure: true
   - set:
+      field: gcp.audit.status.details
+      copy_from: json.protoPayload.status.details
+      if: ctx.json?.protoPayload?.status?.details != null
+  - set:
       field: event.outcome
       value: success
       if: ctx.gcp?.audit?.status?.code != null && ctx.gcp?.audit?.status?.code == 0
@@ -365,6 +381,14 @@ processors:
       target_field: source.as.organization.name
       ignore_missing: true
 
+# Related fields
+  - append:
+      field: related.ip
+      value: "{{{source.ip}}}"
+  - append:
+      field: related.user
+      value: "{{{client.user.email}}}"
+      if: ctx.client?.user?.email != null
 ##
 # clean-up
 ##

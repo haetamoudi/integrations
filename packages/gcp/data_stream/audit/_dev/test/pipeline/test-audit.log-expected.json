@@ -53,6 +53,14 @@
                 "level": "INFO",
                 "logger": "projects/elastic-beats/logs/cloudaudit.googleapis.com%2Fdata_access"
             },
+            "related": {
+                "ip": [
+                    "192.168.1.1"
+                ],
+                "user": [
+                    "xxx@xxx.xxx"
+                ]
+            },
             "service": {
                 "name": "cloudbilling.googleapis.com"
             },
@@ -124,6 +132,14 @@
             "log": {
                 "level": "INFO",
                 "logger": "projects/elastic-beats/logs/cloudaudit.googleapis.com%2Fdata_access"
+            },
+            "related": {
+                "ip": [
+                    "192.168.1.1"
+                ],
+                "user": [
+                    "xxx@xxx.xxx"
+                ]
             },
             "service": {
                 "name": "compute.googleapis.com"
@@ -222,6 +238,14 @@
                 "level": "INFO",
                 "logger": "projects/elastic-beats/logs/cloudaudit.googleapis.com%2Fdata_access"
             },
+            "related": {
+                "ip": [
+                    "192.168.1.1"
+                ],
+                "user": [
+                    "xxx@xxx.xxx"
+                ]
+            },
             "service": {
                 "name": "compute.googleapis.com"
             },
@@ -305,6 +329,14 @@
             "log": {
                 "level": "INFO",
                 "logger": "projects/elastic-beats/logs/cloudaudit.googleapis.com%2Fdata_access"
+            },
+            "related": {
+                "ip": [
+                    "192.168.1.1"
+                ],
+                "user": [
+                    "xxx@xxx.xxx"
+                ]
             },
             "service": {
                 "name": "compute.googleapis.com"
@@ -437,6 +469,14 @@
                 },
                 "type": "kubernetes"
             },
+            "related": {
+                "ip": [
+                    "10.11.12.13"
+                ],
+                "user": [
+                    "system:serviceaccount:cert-manager:cert-manager-webhook"
+                ]
+            },
             "service": {
                 "name": "k8s.io"
             },
@@ -552,6 +592,14 @@
                 "level": "NOTICE",
                 "logger": "projects/foo/logs/cloudaudit.googleapis.com%2Factivity"
             },
+            "related": {
+                "ip": [
+                    "67.43.156.13"
+                ],
+                "user": [
+                    "user@mycompany.com"
+                ]
+            },
             "service": {
                 "name": "compute.googleapis.com"
             },
@@ -634,6 +682,14 @@
             "log": {
                 "level": "NOTICE",
                 "logger": "projects/foo/logs/cloudaudit.googleapis.com%2Factivity"
+            },
+            "related": {
+                "ip": [
+                    "67.43.156.13"
+                ],
+                "user": [
+                    "user@mycompany.com"
+                ]
             },
             "service": {
                 "name": "compute.googleapis.com"
@@ -730,6 +786,14 @@
                 },
                 "type": "kubernetes"
             },
+            "related": {
+                "ip": [
+                    "192.168.1.1"
+                ],
+                "user": [
+                    "xxx@xxx.xxx"
+                ]
+            },
             "service": {
                 "name": "k8s.io"
             },
@@ -810,6 +874,14 @@
                 },
                 "type": "kubernetes"
             },
+            "related": {
+                "ip": [
+                    "192.168.1.1"
+                ],
+                "user": [
+                    "xxx@xxx.xxx"
+                ]
+            },
             "service": {
                 "name": "k8s.io"
             },
@@ -887,6 +959,14 @@
                 },
                 "type": "kubernetes"
             },
+            "related": {
+                "ip": [
+                    "127.0.0.1"
+                ],
+                "user": [
+                    "system:anonymous"
+                ]
+            },
             "service": {
                 "name": "k8s.io"
             },
@@ -961,6 +1041,14 @@
                     "name": "analysis-cluster"
                 },
                 "type": "kubernetes"
+            },
+            "related": {
+                "ip": [
+                    "::1"
+                ],
+                "user": [
+                    "system:serviceaccount:kube-system:generic-garbage-collector"
+                ]
             },
             "service": {
                 "name": "k8s.io"
@@ -1039,6 +1127,11 @@
             "log": {
                 "level": "INFO",
                 "logger": "projects/elastic-beats/logs/cloudaudit.googleapis.com%2Fdata_access"
+            },
+            "related": {
+                "user": [
+                    "xxx@xxx.xxx"
+                ]
             },
             "service": {
                 "name": "iam.googleapis.com"
@@ -1171,6 +1264,14 @@
                     "type": "subjectaccessreviews"
                 },
                 "type": "kubernetes"
+            },
+            "related": {
+                "ip": [
+                    "67.43.156.13"
+                ],
+                "user": [
+                    "xxx@xxx.xxx"
+                ]
             },
             "service": {
                 "name": "k8s.io"
@@ -1554,6 +1655,14 @@
                 },
                 "type": "kubernetes"
             },
+            "related": {
+                "ip": [
+                    "10.142.0.152"
+                ],
+                "user": [
+                    "system:addon-manager"
+                ]
+            },
             "service": {
                 "name": "k8s.io"
             },
@@ -1637,6 +1746,14 @@
                 },
                 "type": "kubernetes"
             },
+            "related": {
+                "ip": [
+                    "192.168.1.1"
+                ],
+                "user": [
+                    "service-150691754250@container-engine-robot.iam.gserviceaccount.com"
+                ]
+            },
             "service": {
                 "name": "container.googleapis.com"
             },
@@ -1707,6 +1824,11 @@
             "log": {
                 "level": "INFO",
                 "logger": "projects/elastic/logs/cloudaudit.googleapis.com%2Fdata_access"
+            },
+            "related": {
+                "user": [
+                    "xxx-compute@developer.gserviceaccount.com"
+                ]
             },
             "service": {
                 "name": "storage.googleapis.com"
@@ -1786,6 +1908,14 @@
                 },
                 "type": "kubernetes"
             },
+            "related": {
+                "ip": [
+                    "192.168.1.1"
+                ],
+                "user": [
+                    "service-150691754250@container-engine-robot.iam.gserviceaccount.com"
+                ]
+            },
             "service": {
                 "name": "container.googleapis.com"
             },
@@ -1861,6 +1991,11 @@
                 "level": "INFO",
                 "logger": "projects/elastic-beats/logs/cloudaudit.googleapis.com%2Fdata_access"
             },
+            "related": {
+                "user": [
+                    "xxx@xxx.xxx"
+                ]
+            },
             "service": {
                 "name": "iam.googleapis.com"
             },
@@ -1874,6 +2009,148 @@
                 "name": "Other",
                 "original": "google-api-go-client/0.5,gzip(gfe)"
             }
+        },
+        {
+            "@timestamp": "2024-08-20T23:40:30.997Z",
+            "client": {
+                "user": {
+                    "email": "system@google.com"
+                }
+            },
+            "cloud": {
+                "instance": {
+                    "id": "5630355820693738547"
+                },
+                "project": {
+                    "id": "elastic-siem"
+                },
+                "provider": "gcp"
+            },
+            "ecs": {
+                "version": "8.11.0"
+            },
+            "event": {
+                "action": "compute.instances.migrateOnHostMaintenance",
+                "id": "-g2g374e10tyi",
+                "kind": "event",
+                "original": "{\"protoPayload\":{\"@type\":\"type.googleapis.com/google.cloud.audit.AuditLog\",\"status\":{\"message\":\"InstancemigratedduringComputeEnginemaintenance.\"},\"authenticationInfo\":{\"principalEmail\":\"system@google.com\"},\"serviceName\":\"compute.googleapis.com\",\"methodName\":\"compute.instances.migrateOnHostMaintenance\",\"resourceName\":\"projects/elastic-siem/zones/us-central1-c/instances/sep-perf-debian-11-155\",\"request\":{\"@type\":\"type.googleapis.com/compute.instances.migrateOnHostMaintenance\"}},\"insertId\":\"-g2g374e10tyi\",\"resource\":{\"type\":\"gce_instance\",\"labels\":{\"instance_id\":\"5630355820693738547\",\"zone\":\"us-central1-c\",\"project_id\":\"elastic-siem\"}},\"timestamp\":\"2024-08-20T23:40:30.997109Z\",\"severity\":\"INFO\",\"labels\":{\"compute.googleapis.com/root_trigger_id\":\"b11f3ce7-7400-4ba4-9cee-eee4c65e38b4\"},\"logName\":\"projects/elastic-siem/logs/cloudaudit.googleapis.com%2Fsystem_event\",\"operation\":{\"id\":\"systemevent-1724197136000-62025edd06400-961ecb86-ebb8062e\",\"producer\":\"compute.instances.migrateOnHostMaintenance\",\"first\":true,\"last\":true},\"receiveTimestamp\":\"2024-08-20T23:40:31.703530860Z\"}",
+                "outcome": "unknown",
+                "provider": "system_event"
+            },
+            "gcp": {
+                "audit": {
+                    "labels": {
+                        "compute.googleapis.com/root_trigger_id": "b11f3ce7-7400-4ba4-9cee-eee4c65e38b4"
+                    },
+                    "logentry_operation": {
+                        "id": "systemevent-1724197136000-62025edd06400-961ecb86-ebb8062e"
+                    },
+                    "request": {
+                        "@type": "type.googleapis.com/compute.instances.migrateOnHostMaintenance"
+                    },
+                    "resource_name": "projects/elastic-siem/zones/us-central1-c/instances/sep-perf-debian-11-155",
+                    "status": {
+                        "message": "InstancemigratedduringComputeEnginemaintenance."
+                    },
+                    "type": "type.googleapis.com/google.cloud.audit.AuditLog"
+                }
+            },
+            "log": {
+                "level": "INFO",
+                "logger": "projects/elastic-siem/logs/cloudaudit.googleapis.com%2Fsystem_event"
+            },
+            "related": {
+                "user": [
+                    "system@google.com"
+                ]
+            },
+            "service": {
+                "name": "compute.googleapis.com"
+            },
+            "tags": [
+                "preserve_original_event"
+            ]
+        },
+        {
+            "@timestamp": "2021-09-13T03:10:14.801Z",
+            "cloud": {
+                "project": {
+                    "id": "elastic-siem"
+                },
+                "provider": "gcp"
+            },
+            "ecs": {
+                "version": "8.11.0"
+            },
+            "event": {
+                "action": "google.storage.buckets.get",
+                "id": "d21cmyd7av9",
+                "kind": "event",
+                "original": "{ \"protoPayload\": { \"@type\": \"type.googleapis.com/google.cloud.audit.AuditLog\", \"status\": { \"code\": 7, \"message\": \"PERMISSION_DENIED\", \"details\": [ { \"@type\": \"type.googleapis.com/google.rpc.PreconditionFailure\", \"violations\": [ { \"type\": \"VPC_SERVICE_CONTROLS\", \"description\": \"ljv4RZNmza4g69MMoOXBtRrlNKRYTjjhgkadQiqlfhmDZhClaMVgjoWA\" } ] } ] }, \"authenticationInfo\": {}, \"requestMetadata\": { \"callerIp\": \"192.168.1.1\", \"requestAttributes\": {}, \"destinationAttributes\": {} }, \"serviceName\": \"storage.googleapis.com\", \"methodName\": \"google.storage.buckets.get\", \"resourceName\": \"projects/elastic-siem\", \"metadata\": { \"securityPolicyInfo\": { \"servicePerimeterName\": \"accessPolicies/30507210272/servicePerimeters/some_service\", \"organizationId\": \"614830067722\" }, \"vpcServiceControlsUniqueId\": \"ljv4RZNmza4g69MMoOXBtRrlNKRYTjjhgkadQiqlfhmDZhClaMVgjoWA\", \"accessLevels\": [ \"accessPolicies/30507210272/accessLevels/thingy\", \"accessPolicies/30507210272/accessLevels/test_us\" ], \"@type\": \"type.googleapis.com/google.cloud.audit.VpcServiceControlAuditMetadata\", \"ingressViolations\": [ { \"servicePerimeter\": \"accessPolicies/30507210272/servicePerimeters/some_service\", \"targetResource\": \"projects/elastic-siem/locations/us-central1\" } ], \"violationReason\": \"NO_MATCHING_ACCESS_LEVEL\", \"resourceNames\": [ \"projects/elastic-siem/locations/us-central1\" ] } }, \"insertId\": \"d21cmyd7av9\", \"resource\": { \"type\": \"audited_resource\", \"labels\": { \"project_id\": \"elastic-siem\", \"method\": \"google.storage.buckets.get\", \"service\": \"storage.googleapis.com\" } }, \"timestamp\": \"2021-09-13T03:10:14.801613786Z\", \"severity\": \"ERROR\", \"logName\": \"projects/elastic-siem/logs/cloudaudit.googleapis.com%2Fpolicy\", \"receiveTimestamp\": \"2021-09-13T03:10:15.410616031Z\" }",
+                "outcome": "failure",
+                "provider": "policy"
+            },
+            "gcp": {
+                "audit": {
+                    "metadata": {
+                        "@type": "type.googleapis.com/google.cloud.audit.VpcServiceControlAuditMetadata",
+                        "accessLevels": [
+                            "accessPolicies/30507210272/accessLevels/thingy",
+                            "accessPolicies/30507210272/accessLevels/test_us"
+                        ],
+                        "ingressViolations": [
+                            {
+                                "servicePerimeter": "accessPolicies/30507210272/servicePerimeters/some_service",
+                                "targetResource": "projects/elastic-siem/locations/us-central1"
+                            }
+                        ],
+                        "resourceNames": [
+                            "projects/elastic-siem/locations/us-central1"
+                        ],
+                        "securityPolicyInfo": {
+                            "organizationId": "614830067722",
+                            "servicePerimeterName": "accessPolicies/30507210272/servicePerimeters/some_service"
+                        },
+                        "violationReason": "NO_MATCHING_ACCESS_LEVEL",
+                        "vpcServiceControlsUniqueId": "ljv4RZNmza4g69MMoOXBtRrlNKRYTjjhgkadQiqlfhmDZhClaMVgjoWA"
+                    },
+                    "resource_name": "projects/elastic-siem",
+                    "status": {
+                        "code": 7,
+                        "details": [
+                            {
+                                "@type": "type.googleapis.com/google.rpc.PreconditionFailure",
+                                "violations": [
+                                    {
+                                        "description": "ljv4RZNmza4g69MMoOXBtRrlNKRYTjjhgkadQiqlfhmDZhClaMVgjoWA",
+                                        "type": "VPC_SERVICE_CONTROLS"
+                                    }
+                                ]
+                            }
+                        ],
+                        "message": "PERMISSION_DENIED"
+                    },
+                    "type": "type.googleapis.com/google.cloud.audit.AuditLog"
+                }
+            },
+            "log": {
+                "level": "ERROR",
+                "logger": "projects/elastic-siem/logs/cloudaudit.googleapis.com%2Fpolicy"
+            },
+            "related": {
+                "ip": [
+                    "192.168.1.1"
+                ]
+            },
+            "service": {
+                "name": "storage.googleapis.com"
+            },
+            "source": {
+                "ip": "192.168.1.1"
+            },
+            "tags": [
+                "preserve_original_event"
+            ]
         }
     ]
 }

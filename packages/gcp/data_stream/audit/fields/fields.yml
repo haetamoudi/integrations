@@ -73,6 +73,10 @@
         - name: last
           type: boolean
           description: "Optional. Set this to True if this is the last log entry in the operation."
+    - name: metadata
+      type: flattened
+      description: |
+        Service-specific data about the request, response, and other information associated with the current audited event.
     - name: method_name
       type: keyword
       description: |
@@ -122,6 +126,10 @@
         - name: message
           type: keyword
           description: "A developer-facing error message, which should be in English. Any user-facing  error message should be localized and sent in the google.rpc.Status.details  field, or localized by the client."
+        - name: details
+          type: flattened
+          description: |
+            A list of messages that carry the error details.
     - name: flattened
       type: flattened
       description: Contains the full audit document as sent by GCP.
