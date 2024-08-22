@@ -209,6 +209,37 @@ processors:
       if: ctx.json?.protoPayload?.metadata != null
 
 ##
+# PolicyViolationInfo
+# .protoPayload.orgPolicyViolationInfo
+# https://cloud.google.com/logging/docs/reference/audit/auditlog/rest/Shared.Types/AuditLog#policyviolationinfo
+##
+  - set:
+      field: gcp.audit.policy_violation_info.violations
+      copy_from: json.protoPayload.policyViolationInfo.orgPolicyViolationInfo.violationInfo
+      ignore_failure: true
+  - foreach:
+      field: gcp.audit.policy_violation_info.violations
+      ignore_missing: true
+      ignore_failure: true
+      processor:
+        rename:
+          field: _ingest._value.resourceAttributes
+          target_field: _ingest._value.resource_attributes
+      if: ctx?.gcp?.audit?.policy_violation_info != null && ctx?.gcp?.audit?.policy_violation_info instanceof List
+  - rename:
+      field: json.protoPayload.policyViolationInfo.orgPolicyViolationInfo.payload
+      target_field: gcp.audit.policy_violation_info.payload
+      ignore_failure: true
+  - rename:
+      field: json.protoPayload.policyViolationInfo.orgPolicyViolationInfo.resourceType
+      target_field: gcp.audit.policy_violation_info.resource_type
+      ignore_failure: true
+  - rename:
+      field: json.protoPayload.policyViolationInfo.orgPolicyViolationInfo.resourceTags
+      target_field: gcp.audit.policy_violation_info.resource_tags
+      ignore_failure: true
+
+##
 # LogEntryOperation
 # .operation
 # https://cloud.google.com/logging/docs/reference/v2/rest/v2/LogEntry#logentryoperation
